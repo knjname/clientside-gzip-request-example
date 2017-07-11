@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  nginx:
+    build: ./nginx-lua-with-zlib
+    volumes:
+      - ./nginx.conf:/nginx/conf/nginx.conf:ro
+      - ./lua:/lua:ro
+    ports:
+      - 80:80
+
+  echo:
+    build: ./echo
+    ports:
+      - 8080:8080
+

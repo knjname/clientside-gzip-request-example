@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "dev": "webpack-dev-server"
+  },
+  "dependencies": {
+    "html-webpack-plugin": "^2.29.0",
+    "webpack": "^3.1.0",
+    "webpack-dev-server": "^2.5.1"
+  }
+}
